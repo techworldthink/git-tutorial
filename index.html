@@ -1,0 +1,193 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .main-head {
+            text-align: center;
+            color: white;
+            background-color: rgba(0, 0, 0, .8);
+            font-family: monospace;
+            padding: 5px;
+        }
+
+        .study {
+            width: 80%;
+            text-align: center;
+            margin-left: 10%;
+            border: 2px solid black;
+        }
+
+        .step {
+            margin-left: 2em;
+            text-transform: uppercase;
+            color: darkblue;
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        p {
+            margin-left: 3em;
+            font-size: 20px;
+        }
+
+        footer {
+            height: 30px;
+            background-color: rgba(0, 0, 0, .8);
+        }
+        b{
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="assets/images/bg.jpg">
+    <h2 class="main-head">1. How Contribute to a public repository in github ?</h2>
+
+    <b class="step">step 1 </b> <br>
+    <p>
+        First you need to fork the repository at which you want to contribute.
+        (after forking a repo with the same name will be created on your github
+        account)
+    </p>
+    <img class="study" src="assets/images/fork.jpg">
+    <br><br><br>
+
+    <b class="step">step 2 </b> <br>
+    <p>
+        Then you need to clone your forked repository<br>
+        Go to your repository list then open forked repository.<br>
+        click on code option<br>
+        copy that url for your repository
+
+    </p>
+    <img class="study" src="assets/images/code.jpg">
+    <br><br><br>
+
+    <b class="step">step 3 </b> <br>
+    <p>
+        Open git bach<br>
+        use this command to clone your github repo to your local directory<br><br>
+        <b>$ git clone url-copied-in-step2</b>
+
+    </p>
+    <img class="study" src="assets/images/clone.jpg">
+    <br><br><br>
+
+    <b class="step">step 4 </b> <br>
+    <p>
+        close git bash<br>
+        within the same directory where you open git bash , there was be folder created with the name of your
+        repository.
+
+    </p>
+
+    <b class="step">step 5 </b> <br>
+    <p>
+        make changes in your local repository.<br>
+        after making changes , you need to push this changes to your forked github repository.
+        to do this follow step 6
+    </p>
+    <b class="step">step 6 </b> <br>
+    <p>
+        <b>$ git add --all</b> <br>
+        <b>$ git commit -m "what you did specify here"</b><br>
+        <b>$ git push -u origin main</b>
+    </p>
+
+    <b class="step">step 7 </b> <br>
+    <p>
+        your forked github reposity is updated. <br>
+        but you need to push this changes in your forked repository to main repository where from you forked.
+    </p>
+    <b class="step">step 8 </b> <br>
+    <p>
+        create a pull request to main repository.<br>
+        goto pull request tab<br>
+        create a pull request with a message
+    </p>
+    <img class="study" src="assets/images/pull.jpg">
+    <br><br><br>
+
+    <b class="step">step 9 </b> <br>
+    <p>
+       All changes in your forked repo is pushed to main repo.
+    </p>
+
+    <section>
+        <h2 class="main-head">2. Git installation and configuration</h2>
+
+    <b class="step">step 1 </b> <br>
+    <p>
+        Download git from <a href="https://git-scm.com/downloads">ere</a><br>
+        Install it<br>
+
+    </p>
+    <b class="step">step 2 </b> <br>
+    <p>
+       Now need to configure your git with your github credentials<br>
+       use this commands for configure.<br><br>
+       <b>$ git config --global user.name "FIRST_NAME"</b><br>
+       <b>$ git config --global user.email "MY_NAME@example.com"</b>
+        
+    </p>
+    <b class="step">step 3 </b> <br>
+    <p>
+       your git is ready now
+        
+    </p>
+    </section>
+
+    <section>
+        <h2 class="main-head">3. Update your forked repository</h2>
+
+        <b class="step">step 1 </b> <br>
+        <p>
+            If many peoples contribute to a repository you need to update your fork with the main repo<br>
+            goto your forked repository<br>
+            within pull request tab (see section 1 step 8)<br>
+            create a pull request to merge with the main repo.<br><br>
+            (you can understand is there any need of update , by checking the commits status in both repositories )
+
+        </p>
+        <img class="study" src="assets/images/commit.jpg">
+        <br><br><br>
+    </section>
+
+    <section>
+        <h2 class="main-head">4. Update your local repository</h2>
+
+        <b class="step">step 1 </b> <br>
+        <p>
+            After updating your forked repository ,you can update your local repository use this command.<br>
+            <br>
+            <b>$ git pull</b> 
+
+        </p>
+        <b class="step">step 2 </b> <br>
+        <p>
+            Now make your changes and goto section 1
+        </p>
+       
+    </section>
+
+    <footer>
+ <br><br><br>
+    </footer>
+</body>
+
+</html>
